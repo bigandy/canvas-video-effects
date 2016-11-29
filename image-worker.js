@@ -5,7 +5,7 @@ onmessage = function(event) {
 
 	/* Image Processing goes here */
 	for (var i=0; i < dst.length; i += 4) {
-		dst[i] += 70;
+		dst[i] += 100;
 	}
 
 	postMessage({
