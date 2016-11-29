@@ -9,6 +9,6 @@ onmessage = function(event) {
 	}
 
 	postMessage({
-		dstData: imageData
+		// dstData: imageData,
 	});
 };
