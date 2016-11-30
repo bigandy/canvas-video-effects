@@ -47,7 +47,7 @@
 				var srcData = ctx.getImageData(0,0,w,h);
 				
 				var colorThief = new ColorThief();
-				document.body.style.backgroundColor = colorThief.getColor(video);
+				document.body.style.backgroundColor = (colorThief.getColor(video) !== undefined) ? 'red' : 'black';
 
 				processor.postMessage({
 					imageData: srcData
